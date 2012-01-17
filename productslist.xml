@@ -1,0 +1,18 @@
+<productlist>
+<product>
+  <name>Cafe</name>
+  <price>18.5</price>
+</product>
+<product>
+  <name>Water</name>
+  <price>2</price>
+</product>
+<product>
+  <name>Cola</name>
+  <price>1</price>
+</product>
+<product>
+  <name>Lemonade</name>
+  <price>20</price>
+</product>
+</productlist>

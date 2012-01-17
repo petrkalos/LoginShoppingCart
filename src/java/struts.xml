@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    
+    <constant name="struts.action.extension" value="action" />
+    
+    <constant name="struts.enable.DynamicMethodInvocation"
+		value="false" />
+    <constant name="struts.devMode" value="false" />
+
+    <constant name="struts.custom.i18n.resources"
+		value="ApplicationResources" />
+                
+    <constant name="struts.action.excludePattern" value="/ShoppingCartServlet"/>
+
+    <package name="default" extends="jcaptcha4struts2-default" namespace="/">
+
+        <action name="login" class="org.kalos.LoginAction">
+            <result name="input">login.jsp</result>
+            <result name="success">index.jsp</result>
+            <result name="error">login.jsp</result>
+        </action>
+        
+        <action name="register" class="org.kalos.RegisterAction">
+            <result name="input">register.jsp</result>
+            <result name="success">login.jsp</result>
+            <result name="error">register.jsp</result>
+        </action>
+    </package>
+</struts>
+
